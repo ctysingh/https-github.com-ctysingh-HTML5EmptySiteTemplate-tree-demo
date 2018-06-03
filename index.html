@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en">    
     <head>
-        <meta charset="utf-8" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>APIfest Demo</title>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="./site.css">
+        <link rel="stylesheet" href="./css/sign-in.css">
     </head>
-    <body>
+    <body class="container-fluid">
         <header></header>
         <section>
             <p>This is a sample web application for PNC Api Fest 2018</p>
         </section>
-        <form onsubmit="signOn()" action="./home.html">
-            <label>Log in</label>
-            <input type="text"></br>
-            <label>Password</label>
-            <input type="password"></br>
-            <input type="submit" title="SignOn">
+        
+        <form class="sign-in-form" onsubmit="signOn()" action="./home.html">
+            <img src="./images/pnc_logo.png">            
+            <br></br>         
+            <div class="form-group">
+                <input type="text" class="form-control col-sm-2" id="userId"
+                placeholder="Enter Your User Id">
+            </div>
+            <div class="form-group" >                
+                <input type="password" class="form-control col-sm-2" 
+                id="userPassword" placeholder="Password"> 
+                  
+            </div>
+
+            <input type="submit" class="btn btn-primary" title="SignOn"
+            value="SIGN IN" > 
+            </br></br>
+            <div class="form-group">
+                 <!-- add icon file from font awesome-->          
+            </div>
+            
         </form>
 
         <footer>
@@ -24,6 +44,8 @@
         </footer>
 
         <script type="text/javascript" src="js/index.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         
     </body>
 </html>
