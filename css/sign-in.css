@@ -1,0 +1,14 @@
+:host{
+    display: fles;
+    align-items: center;
+    justify-content: center;    
+}
+
+.sign-in-form{
+    min-width: 300px;
+    padding: 20px;
+}
+
+button{
+    float: left;
+}
